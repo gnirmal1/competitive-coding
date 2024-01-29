@@ -5,7 +5,6 @@ import json
 def update_json(file):
     if file.startswith("USACO") or file.startswith("UVa"):
         return
-    print(file)
     path_split = file.split('/')
     file_split = path_split[-1].split('.')
 
@@ -35,6 +34,7 @@ def update_json(file):
 
 def stage_files(repo):
     for file in repo.untracked_files:
+        print(file)
         if file.endswith(".cpp"):
             update_json(file)
         repo.index.add(file)
