@@ -1,0 +1,12 @@
+# Ignore all files
+*
+
+# Except for specific file types
+!*.cpp
+!*.py
+!*.md
+!LICENSE
+!.gitignore
+
+# Allow directories to be tracked
+!*/
